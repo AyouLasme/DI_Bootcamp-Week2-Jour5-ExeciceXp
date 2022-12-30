@@ -12,7 +12,7 @@ function playTheGame() {
         }else {
             if(numero >= 0 && numero < 10){
                 let computerNumber = Math.floor(Math.random() * 10);
-                console.log(computerNumber);
+                compareNumbers(numero,computerNumber);
             }else{
                 alert("Désolé, ce n'est pas un bon chiffre, au revoir");
             } 
@@ -23,7 +23,7 @@ function playTheGame() {
 
   // partie2
 
-function compareNumbers(userNumber, computerNumber) {
+function compareNumbers(userNumber,computerNumber) {
     do {
         const nombreDeChance = 3;
         let i = 0;
